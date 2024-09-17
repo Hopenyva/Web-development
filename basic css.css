@@ -1,0 +1,29 @@
+/* Set Font family and text color */
+body {
+    font-family: Arial , sans-serif;
+    color: aqua;
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+}
+/* Style the main content container */
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+/* Center-align text and padding */
+h1 {
+    text-align: center;
+    padding: 10px;
+    color: #007bff;
+}
+/* Add margin and padding for paragraphs */
+p {
+    margin: 15px 0;
+    padding: 10px;
+    line-height: 1.6;
+}
