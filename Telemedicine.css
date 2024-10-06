@@ -1,0 +1,83 @@
+body {
+    font-family: Arial,  sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: black;
+    padding: 1em;
+    color: white;
+    text-align: center;
+}
+header .logo img {
+    width: 50px;
+    vertical-align: middle;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+nav ul li {
+    margin: 0 10px;
+
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+nav ul li a:hover {
+    background-color: aqua;
+
+}
+/* Main layout using flexbox*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+main {
+    flex: 3;
+    padding-right: 20px;
+}
+.sidebar {
+    flex: 1;
+    background-color: black;
+    padding: 10px;
+}
+/*Footer styles*/
+footer {
+    background-color: black;
+    color: beige;
+    padding: 1em;
+    text-align: center;
+
+}
+/*Responsive media queries*/
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        order: 1;
+        margin-top: 20px;
+    }
+    
+}
+@media (max-width: 480px) {
+    nav ul {
+        display: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+}

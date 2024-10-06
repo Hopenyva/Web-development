@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form Validation</title>
+    <style>
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form id="registrationForm">
+        <label for="name">Name: </label>
+        <input type="text" id="name" required><span class="error" id="nameError"></span><br><br>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" required><span class="error" id="emailError"></span><br><br>
+
+        <label for="password">Password: </label>
+        <input type="password" id="password" required><span class="error" id="passwordError"></span><br><br>
+
+        <label for="confirmPassword">Confirm Password: </label>
+        <input type="password" id="confirmPassword" required><span class="error" id="confirmPasswordError"></span><br><br>
+
+        <label for="age">Age: </label>
+        <input type="number" id="age" required min="18" max="25"><span class="error" id="ageError"></span><br><br>
+
+        <label>Gender: </label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <label for="country">Country: </label>
+        <select id="country">
+            <option value="">--Select--</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Kenya>Kenya</option>
+        </select><span class="error" id="countryError"></span><br><br>
+
+        <label for="terms">I accept terms and conditions: </label>
+        <input type="checkbox" id="terms"><span class="error" id="termsError"></span><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <h1>Login Form</h1>
+    <form id="loginForm">
+        <label for="loginEmail">Email: </label>
+        <input type="email" id="loginEmail" required><span class="error" id="loginEmailError"></span><br><br>
+
+        <label for="loginPassword">Password: </label>
+        <input type="password" id="loginPassword" required><span class="error" id="loginPasswordError"></span><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <script src="Basic form validation.jss"></script>
+</body>
+</html>
